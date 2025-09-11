@@ -1,0 +1,9 @@
+{
+  "name": "renovate-bun-monorepo-reproduction",
+  "workspaces": {
+    "packages": [
+      "frontend",
+      "backend"
+    ]
+  }
+}
