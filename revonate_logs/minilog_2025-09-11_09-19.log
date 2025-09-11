@@ -1,0 +1,156 @@
+DEBUG: syncBranchState() (branch="renovate/express-5.x")
+DEBUG: syncBranchState(): update baseBranchSha (branch="renovate/express-5.x")
+DEBUG: getBranchPr(renovate/express-5.x) (branch="renovate/express-5.x")
+DEBUG: findPr(renovate/express-5.x, undefined, open) (branch="renovate/express-5.x")
+DEBUG: branchExists=false (branch="renovate/express-5.x")
+DEBUG: dependencyDashboardCheck=undefined (branch="renovate/express-5.x")
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (branch="renovate/express-5.x")
+DEBUG: findPr(renovate/express-5.x, Update dependency express to v5, !open) (branch="renovate/express-5.x")
+DEBUG: prAlreadyExisted=false (branch="renovate/express-5.x")
+DEBUG: Open PR Count: 1, Existing Branch Count: 1, Hourly PR Count: 1 (branch="renovate/express-5.x")
+DEBUG: prHourlyLimit of the upgrades present in this branch (branch="renovate/express-5.x")
+{
+  "limits": [
+    {
+      "depName": "express",
+      "prHourlyLimit": 2
+    }
+  ]
+}
+
+DEBUG: Calculated lowest prHourlyLimit among the upgrades present in this branch is 2. (branch="renovate/express-5.x")
+DEBUG: branchConcurrentLimit of the upgrades present in this branch (branch="renovate/express-5.x")
+{
+  "limits": [
+    {
+      "depName": "express",
+      "branchConcurrentLimit": null
+    }
+  ]
+}
+
+DEBUG: Calculated lowest branchConcurrentLimit among the upgrades present in this branch is 10. (branch="renovate/express-5.x")
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2025-09-11T09:19:48.876Z) (branch="renovate/express-5.x")
+DEBUG: No schedule defined (branch="renovate/express-5.x")
+DEBUG: Converting rebaseWhen=auto to rebaseWhen=conflicted because no rule for behind-base-branch applies (branch="renovate/express-5.x")
+DEBUG: Branch needs creating (branch="renovate/express-5.x")
+DEBUG: Using reuseExistingBranch: false (branch="renovate/express-5.x")
+DEBUG: Setting current branch to main (branch="renovate/express-5.x")
+DEBUG: latest commit (branch="renovate/express-5.x")
+{
+  "branchName": "main"
+  "latestCommitDate": "2025-09-11T17:16:21+08:00"
+  "sha": "fa5018b3a21a63e7f12fe86437eb688de0f0c15d"
+}
+
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (branch="renovate/express-5.x")
+DEBUG: npm.updateDependency(): dependencies.express = ^5.0.0 (branch="renovate/express-5.x")
+DEBUG: Updating express in backend/package.json (branch="renovate/express-5.x")
+DEBUG: updateArtifacts for updatedPackageFiles (branch="renovate/express-5.x")
+DEBUG: npm.updateArtifacts(backend/package.json) (branch="renovate/express-5.x")
+DEBUG: No packageManager updates - returning null (branch="renovate/express-5.x")
+DEBUG: Updated 1 package files (branch="renovate/express-5.x")
+DEBUG: Getting updated lock files (branch="renovate/express-5.x")
+DEBUG: Writing package.json files (branch="renovate/express-5.x")
+{
+  "packageFiles": [
+    "backend/package.json"
+  ]
+}
+
+DEBUG: Writing any updated package files (branch="renovate/express-5.x")
+DEBUG: Writing backend/package.json (branch="renovate/express-5.x")
+DEBUG: Found 0 npm host rule(s) (branch="renovate/express-5.x")
+DEBUG: Found 1 host rule(s) without host type (branch="renovate/express-5.x")
+DEBUG: Found 1 host rule(s) without host type after dropping duplicates (branch="renovate/express-5.x")
+DEBUG: No updated lock files in branch (branch="renovate/express-5.x")
+DEBUG: 1 file(s) to commit (branch="renovate/express-5.x")
+DEBUG: Preparing files for committing to branch renovate/express-5.x (branch="renovate/express-5.x")
+DEBUG: git commit (branch="renovate/express-5.x")
+{
+  "deletedFiles": []
+  "ignoredFiles": []
+  "result": {
+    "author": null,
+    "branch": "renovate/express-5.x",
+    "commit": "06c1b3fe8a0a416c5903cdde3c5bc0d9f1349b87",
+    "root": false,
+    "summary": {
+      "changes": 1,
+      "insertions": 1,
+      "deletions": 0
+    }
+  }
+}
+
+DEBUG: resetToCommit(fa5018b3a21a63e7f12fe86437eb688de0f0c15d) (branch="renovate/express-5.x")
+DEBUG: Fetching branch renovate/express-5.x (branch="renovate/express-5.x")
+DEBUG: Setting current branch to main (branch="renovate/express-5.x")
+DEBUG: latest commit (branch="renovate/express-5.x")
+{
+  "branchName": "main"
+  "latestCommitDate": "2025-09-11T17:16:21+08:00"
+  "sha": "fa5018b3a21a63e7f12fe86437eb688de0f0c15d"
+}
+
+INFO: Branch created (branch="renovate/express-5.x")
+{
+  "commitSha": "4f801443f1093d1d35db6168ce07b18b7d88d573"
+}
+
+DEBUG: Ensuring PR (branch="renovate/express-5.x")
+DEBUG: There are 0 errors and 0 warnings (branch="renovate/express-5.x")
+DEBUG: getBranchPr(renovate/express-5.x) (branch="renovate/express-5.x")
+DEBUG: findPr(renovate/express-5.x, undefined, open) (branch="renovate/express-5.x")
+DEBUG: findPr(renovate/express-5.x, undefined, closed) (branch="renovate/express-5.x")
+DEBUG: Fetching changelog: https://github.com/expressjs/express (4.21.2 -> 5.1.0) (branch="renovate/express-5.x")
+DEBUG: Creating PR (branch="renovate/express-5.x")
+{
+  "prTitle": "Update dependency express to v5"
+}
+
+DEBUG: prHourlyLimit of the upgrades present in this branch (branch="renovate/express-5.x")
+{
+  "limits": [
+    {
+      "depName": "express",
+      "prHourlyLimit": 2
+    }
+  ]
+}
+
+DEBUG: Calculated lowest prHourlyLimit among the upgrades present in this branch is 2. (branch="renovate/express-5.x")
+DEBUG: prConcurrentLimit of the upgrades present in this branch (branch="renovate/express-5.x")
+{
+  "limits": [
+    {
+      "depName": "express",
+      "prConcurrentLimit": 10
+    }
+  ]
+}
+
+DEBUG: Calculated lowest prConcurrentLimit among the upgrades present in this branch is 10. (branch="renovate/express-5.x")
+DEBUG: Creating PR (branch="renovate/express-5.x")
+{
+  "title": "Update dependency express to v5"
+  "head": "jimchen5209:renovate/express-5.x"
+  "base": "main"
+  "draft": false
+}
+
+DEBUG: PR created (branch="renovate/express-5.x")
+{
+  "pr": 3
+  "draft": false
+}
+
+DEBUG: Adding labels '' to #3 (branch="renovate/express-5.x")
+INFO: PR created (branch="renovate/express-5.x")
+{
+  "pr": 3
+  "prTitle": "Update dependency express to v5"
+}
+
+DEBUG: addParticipants(pr=3) (branch="renovate/express-5.x")
+DEBUG: setPrCache() (branch="renovate/express-5.x")

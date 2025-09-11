@@ -1,0 +1,192 @@
+DEBUG: syncBranchState() (branch="renovate/vite-7.x")
+DEBUG: getBranchPr(renovate/vite-7.x) (branch="renovate/vite-7.x")
+DEBUG: findPr(renovate/vite-7.x, undefined, open) (branch="renovate/vite-7.x")
+DEBUG: branchExists=false (branch="renovate/vite-7.x")
+DEBUG: dependencyDashboardCheck=global-config (branch="renovate/vite-7.x")
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (branch="renovate/vite-7.x")
+DEBUG: findPr(renovate/vite-7.x, Update dependency vite to v7, !open) (branch="renovate/vite-7.x")
+DEBUG: prAlreadyExisted=false (branch="renovate/vite-7.x")
+DEBUG: Open PR Count: 2, Existing Branch Count: 2, Hourly PR Count: 0 (branch="renovate/vite-7.x")
+DEBUG: prHourlyLimit of the upgrades present in this branch (branch="renovate/vite-7.x")
+{
+  "limits": [
+    {
+      "depName": "vite",
+      "prHourlyLimit": 2
+    }
+  ]
+}
+
+DEBUG: Calculated lowest prHourlyLimit among the upgrades present in this branch is 2. (branch="renovate/vite-7.x")
+DEBUG: branchConcurrentLimit of the upgrades present in this branch (branch="renovate/vite-7.x")
+{
+  "limits": [
+    {
+      "depName": "vite",
+      "branchConcurrentLimit": null
+    }
+  ]
+}
+
+DEBUG: Calculated lowest branchConcurrentLimit among the upgrades present in this branch is 10. (branch="renovate/vite-7.x")
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2025-09-11T11:51:51.342Z) (branch="renovate/vite-7.x")
+DEBUG: No schedule defined (branch="renovate/vite-7.x")
+DEBUG: Manual create/rebase requested via checkedBranches (branch="renovate/vite-7.x")
+DEBUG: Using reuseExistingBranch: false (branch="renovate/vite-7.x")
+DEBUG: Setting current branch to main (branch="renovate/vite-7.x")
+DEBUG: syncGit(): Initializing git repository into /tmp/renovate/repos/github/jimchen5209/renovate-bun-monorepo-reproduction (branch="renovate/vite-7.x")
+DEBUG: Performing blobless clone (branch="renovate/vite-7.x")
+DEBUG: git clone completed (branch="renovate/vite-7.x")
+{
+  "durationMs": 750
+}
+
+DEBUG: latest repository commit (branch="renovate/vite-7.x")
+{
+  "latestCommit": {
+    "hash": "fa5018b3a21a63e7f12fe86437eb688de0f0c15d",
+    "date": "2025-09-11T17:16:21+08:00",
+    "message": "Merge pull request #1 from jimchen5209/renovate/configure",
+    "refs": "HEAD -> main, origin/main, origin/HEAD",
+    "body": "Configure Renovate",
+    "author_name": "Jim Chen",
+    "author_email": "10269287+jimchen5209@users.noreply.github.com"
+  }
+}
+
+DEBUG: Current branch SHA: fa5018b3a21a63e7f12fe86437eb688de0f0c15d (branch="renovate/vite-7.x")
+DEBUG: latest commit (branch="renovate/vite-7.x")
+{
+  "branchName": "main"
+  "latestCommitDate": "2025-09-11T17:16:21+08:00"
+  "sha": "fa5018b3a21a63e7f12fe86437eb688de0f0c15d"
+}
+
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (branch="renovate/vite-7.x")
+DEBUG: npm.updateDependency(): dependencies.vite = ^7.0.0 (branch="renovate/vite-7.x")
+DEBUG: Updating vite in frontend/package.json (branch="renovate/vite-7.x")
+DEBUG: updateArtifacts for updatedPackageFiles (branch="renovate/vite-7.x")
+DEBUG: bun.updateArtifacts(frontend/package.json) (branch="renovate/vite-7.x")
+DEBUG: Found 0 npm host rule(s) (branch="renovate/vite-7.x")
+DEBUG: Found 1 host rule(s) without host type (branch="renovate/vite-7.x")
+DEBUG: Found 1 host rule(s) without host type after dropping duplicates (branch="renovate/vite-7.x")
+DEBUG: Setting CONTAINERBASE_CACHE_DIR to /runner/cache/containerbase (branch="renovate/vite-7.x")
+DEBUG: Using containerbase dynamic installs (branch="renovate/vite-7.x")
+DEBUG: Resolved stable matching version (branch="renovate/vite-7.x")
+{
+  "toolName": "bun"
+  "resolvedVersion": "1.2.21"
+}
+
+DEBUG: Executing command (branch="renovate/vite-7.x")
+{
+  "command": "install-tool bun 1.2.21"
+}
+
+DEBUG: exec completed (branch="renovate/vite-7.x")
+{
+  "durationMs": 2345
+  "stdout": "[11:51:52.542] INFO (928): Installing tool bun@1.2.21...\n1.2.21\n[11:51:54.234] INFO (928): Install tool bun succeeded in 1.6s.\n"
+  "stderr": ""
+}
+
+DEBUG: Executing command (branch="renovate/vite-7.x")
+{
+  "command": "bun install --ignore-scripts"
+}
+
+DEBUG: exec completed (branch="renovate/vite-7.x")
+{
+  "durationMs": 635
+  "stdout": "bun install v1.2.21 (7c45ed97)\n\n+ @types/bun@1.2.21\n+ vite@7.1.5\n+ typescript@5.9.2\n\n92 packages installed [625.00ms]\n"
+  "stderr": "Resolving dependencies\nResolved, downloaded and extracted [20]\nSaved lockfile\n"
+}
+
+DEBUG: Updated 1 package files (branch="renovate/vite-7.x")
+DEBUG: Getting updated lock files (branch="renovate/vite-7.x")
+DEBUG: Writing package.json files (branch="renovate/vite-7.x")
+{
+  "packageFiles": [
+    "backend/package.json"
+  ]
+}
+
+DEBUG: Writing any updated package files (branch="renovate/vite-7.x")
+DEBUG: Writing frontend/package.json (branch="renovate/vite-7.x")
+DEBUG: Found 0 npm host rule(s) (branch="renovate/vite-7.x")
+DEBUG: Found 1 host rule(s) without host type (branch="renovate/vite-7.x")
+DEBUG: Found 1 host rule(s) without host type after dropping duplicates (branch="renovate/vite-7.x")
+DEBUG: No updated lock files in branch (branch="renovate/vite-7.x")
+DEBUG: 1 file(s) to commit (branch="renovate/vite-7.x")
+DEBUG: Preparing files for committing to branch renovate/vite-7.x (branch="renovate/vite-7.x")
+DEBUG: Setting git author name: renovate[bot] (branch="renovate/vite-7.x")
+DEBUG: Setting git author email: 29139614+renovate[bot]@users.noreply.github.com (branch="renovate/vite-7.x")
+DEBUG: git commit (branch="renovate/vite-7.x")
+{
+  "deletedFiles": []
+  "ignoredFiles": []
+  "result": {
+    "author": null,
+    "branch": "renovate/vite-7.x",
+    "commit": "66d218738f41ea7d49edefb833f11c34631deab4",
+    "root": false,
+    "summary": {
+      "changes": 1,
+      "insertions": 1,
+      "deletions": 1
+    }
+  }
+}
+
+DEBUG: resetToCommit(fa5018b3a21a63e7f12fe86437eb688de0f0c15d) (branch="renovate/vite-7.x")
+DEBUG: Fetching branch renovate/vite-7.x (branch="renovate/vite-7.x")
+DEBUG: Setting current branch to main (branch="renovate/vite-7.x")
+DEBUG: latest commit (branch="renovate/vite-7.x")
+{
+  "branchName": "main"
+  "latestCommitDate": "2025-09-11T17:16:21+08:00"
+  "sha": "fa5018b3a21a63e7f12fe86437eb688de0f0c15d"
+}
+
+INFO: Branch created (branch="renovate/vite-7.x")
+{
+  "commitSha": "e483b4bebf0b96b21c5f67a01d15fb89285aec9a"
+}
+
+DEBUG: Ensuring PR (branch="renovate/vite-7.x")
+DEBUG: There are 0 errors and 0 warnings (branch="renovate/vite-7.x")
+DEBUG: getBranchPr(renovate/vite-7.x) (branch="renovate/vite-7.x")
+DEBUG: findPr(renovate/vite-7.x, undefined, open) (branch="renovate/vite-7.x")
+DEBUG: findPr(renovate/vite-7.x, undefined, closed) (branch="renovate/vite-7.x")
+DEBUG: Fetching changelog: https://github.com/vitejs/vite (6.3.6 -> 7.1.5) (branch="renovate/vite-7.x")
+DEBUG: Creating PR (branch="renovate/vite-7.x")
+{
+  "prTitle": "Update dependency vite to v7"
+}
+
+DEBUG: Creating PR (branch="renovate/vite-7.x")
+{
+  "title": "Update dependency vite to v7"
+  "head": "jimchen5209:renovate/vite-7.x"
+  "base": "main"
+  "draft": false
+}
+
+DEBUG: PR created (branch="renovate/vite-7.x")
+{
+  "pr": 5
+  "draft": false
+}
+
+DEBUG: Adding labels '' to #5 (branch="renovate/vite-7.x")
+INFO: PR created (branch="renovate/vite-7.x")
+{
+  "pr": 5
+  "prTitle": "Update dependency vite to v7"
+}
+
+DEBUG: addParticipants(pr=5) (branch="renovate/vite-7.x")
+DEBUG: setPrCache() (branch="renovate/vite-7.x")
+DEBUG: Created Pull Request #5 (branch="renovate/vite-7.x")
+DEBUG: PR is not configured for automerge (branch="renovate/vite-7.x")
+DEBUG: setBranchCommit() (branch="renovate/vite-7.x")
