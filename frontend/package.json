@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "vite": "^6.3.5"
+    "vite": "^8.0.0"
   },
   "devDependencies": {
     "@types/bun": "^1.2.14"
